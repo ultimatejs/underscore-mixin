@@ -1,8 +1,3 @@
-if(typeof _ === 'undefined') {
-	console.log('Underscore is not defined. Make sure your packages add it first.');
-	return; //dont depend on any particular underscore version, so it might not be defined
-}
-
 _.mixin({
 	//extending using Property Descriptors so object getter/setters can be used (e.g. get someMethod()...)
 	extend: function(obj) {
