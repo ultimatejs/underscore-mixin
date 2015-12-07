@@ -2,6 +2,7 @@ if(typeof _ === 'undefined') {
 	console.log('Underscore is not defined. Make sure your packages add it first.');
 	return; //dont depend on any particular underscore version, so it might not be defined
 }
+
 _.mixin({
 	//extending using Property Descriptors so object getter/setters can be used (e.g. get someMethod()...)
 	extend: function(obj) {
@@ -243,7 +244,9 @@ _.mixin({
 		return !isNaN(num) && num !== '';
 	},
 	findIndex: function(array, predicate, context) {
-    for(let index = 0; index >= 0 && index < array.length; index += 1) {
+		var index;
+		
+    for(index = 0; index >= 0 && index < array.length; index += 1) {
       if(predicate.call(context, array[index], index, array)) return index;
     }
 		

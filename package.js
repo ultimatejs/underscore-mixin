@@ -2,7 +2,7 @@ Package.describe({
 	name: "ultimatejs:underscore-mixin",
 	summary: "Common underscore methods",
 	version: '0.0.1',
-	documentation: 'README.md',
+	documentation: null,
 	git: 'https://github.com/ultimatejs/underscore-mixin'
 });
 
